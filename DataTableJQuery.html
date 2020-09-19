@@ -496,10 +496,18 @@
         $(document).ready(function(){
             $("#example").DataTable({
                 "paging":   false,
-                "ordering": false, 
-                "searching":false
+                "columnDefs":[{
+                    "targets":[3],
+                    "visible":false
+                },
+                {
+                    "targets":[0],
+                    "orderable":false
+                }
+                ]
+
             });
-        })
+        });
     </script>
 
 </body>
@@ -508,4 +516,8 @@
 <!--
 1-- Remember to include jQuery
 2-- Disabling features that you don't wish to use for a particular table is easily done by setting a variable in the initialisation object. 
+3-- columnDefs (column definition) this parameter allows you to assign specific options to columns in the table.
+    This parameter is an array of column definition objects.
+    columnDefs requires a targets property.This targets property tells DataTables which column(s) the definition should be applied to.
+
 -->
