@@ -494,7 +494,11 @@
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
     <script>
         $(document).ready(function(){
-            $("#example").DataTable();
+            $("#example").DataTable({
+                "paging":   false,
+                "ordering": false, 
+                "searching":false
+            });
         })
     </script>
 
@@ -503,5 +507,5 @@
 
 <!--
 1-- Remember to include jQuery
-
+2-- Disabling features that you don't wish to use for a particular table is easily done by setting a variable in the initialisation object. 
 -->
