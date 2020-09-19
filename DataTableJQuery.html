@@ -494,11 +494,7 @@
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
     <script>
         $(document).ready(function(){
-            $("#example").DataTable({
-                "paging":   false,
-                "info":false,
-                
-                    });
+            $("#example").DataTable();
                 });
     </script>
 
@@ -511,5 +507,5 @@
 3-- columnDefs (column definition) this parameter allows you to assign specific options to columns in the table.
     This parameter is an array of column definition objects.
     columnDefs requires a targets property.This targets property tells DataTables which column(s) the definition should be applied to.
-
+4-- display class is used to apply basic style on the table like hover and stripe effect
 -->
