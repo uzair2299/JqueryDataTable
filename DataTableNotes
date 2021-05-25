@@ -1,0 +1,10 @@
+
+-------------------------------------------------------------------------
+--Searching in Datatable
+var table = $('#example').DataTable();
+ 
+// #myInput is a <input type="text"> element
+$('#myInput').on( 'keyup', function () {
+    table.search( this.value ).draw();
+} );
+-------------------------------------------------------------------------
