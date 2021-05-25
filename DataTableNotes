@@ -1,4 +1,8 @@
-
+-------------------------------------------------------------------------
+--Simple initialization
+$(document).ready(function(){
+    $("#example").DataTable();
+    });
 -------------------------------------------------------------------------
 --Searching in Datatable
 var table = $('#example').DataTable();
