@@ -5,3 +5,8 @@ $('#myTable tr').click(function(){
     return false;
 });
 --------------------------------------------------------
+--Remove row by click button in a row of table
+$("#MyTable").on("click", "#DeleteButton", function() {
+   $(this).closest("tr").remove();
+});
+--------------------------------------------------------
