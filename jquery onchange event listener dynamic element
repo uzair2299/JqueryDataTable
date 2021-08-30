@@ -1,0 +1,11 @@
+// bind click handler to element that is added later/dynamically
+document.addEventListener('click', function(e){
+    if(e.target && e.target.id== 'myDynamicallyAddedElementID'){
+         //do something
+    }
+});
+
+//Alternatively, if your using jQuery:
+$(document).on('click','#myDynamicallyAddedElementID',function(){
+    //do something
+});
